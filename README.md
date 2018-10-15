@@ -12,3 +12,7 @@ Tormentas electricas, apagones,entre otros.
 pero sera terminada en futuro!
 
 
+para pruebas:
+el usuario es : admin
+contraseña: admin
+recomiendo utilizar el DUmp de la base de datos que se encuentra en la carpeta de backup
