@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_certificate_tree">
+            <field name="name">Pre-Inscripcion Uni.tree</field>
+            <field name="model">op.certificate</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="usuario"/>
+                    <field name="impreso"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_certificate_view">
+            <field name="name">Pre-inscripcion Universitaria</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">op.certificate</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_certificate_tree"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <menuitem
+            id="menu_op_certificate_sub"
+            name="Certificados impresos"
+            parent="openeducat_erp.menu_op_student_main_student"
+            sequence="21"
+            action="act_open_certificate_view"
+            groups="openeducat_erp.group_op_back_office,openeducat_erp.group_op_back_office_admin"
+        />
+    </data>
+</openerp>
