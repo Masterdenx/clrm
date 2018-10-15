@@ -1,5 +1,4 @@
-##############################
-CLRM
+####################CLRM####################
 PROYECTO DE PRUEBA PARA POSIBLE TRABAJO EN WORKANA
 
 consta en una adaptacion vaga ( incompleta) de algunos modulos  del Openeducat de odoo8
